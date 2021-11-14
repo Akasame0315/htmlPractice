@@ -1,0 +1,15 @@
+.bgimage{
+	background-image: url("../img/j9ORuNb.png");
+	background-position: center center;
+	background-size: cover;
+	height: 200px;
+}
+div.services{
+	padding-top: 70px;
+	color: white;
+}
+footer{
+	background-color: black;
+	background-position: bottom;
+	color: white;
+}
