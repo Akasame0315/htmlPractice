@@ -1,0 +1,11 @@
+.bgimage{
+    background-image:
+    url("../images/table.jpg");
+    background-position: center center;
+    background-size: cover;
+    height:270px;
+}
+
+h1{
+    color: #02DF82;
+}
