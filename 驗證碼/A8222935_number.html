@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A8222935_number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = new Array();
+		var numCode;
+		//var timeInterval=2000;
+
+		arr[0]="./img/number0.jpg";
+		arr[1]="./img/number1.jpg";
+		arr[2]="./img/number2.jpg";
+		arr[3]="./img/number3.jpg";
+		arr[4]="./img/number4.jpg";
+		arr[5]="./img/number5.jpg";
+		arr[6]="./img/number6.jpg";
+		arr[7]="./img/number7.jpg";
+		arr[8]="./img/number8.jpg";
+		arr[9]="./img/number9.jpg";
+
+		//setInterval("showImg()",timeInterval);
+
+		//產生驗證碼
+		function showImg(){
+			numCode = "";
+			var code = new Array();
+			var num=document.getElementById("num");
+			var num1=document.getElementById("num1");
+			var num2=document.getElementById("num2");
+			var num3=document.getElementById("num3");
+			
+			var a = Math.floor(Math.random()*10);
+			num.src=arr[a];
+			numCode += a;
+
+			
+			var a = Math.floor(Math.random()*10);
+			num1.src=arr[a];
+			numCode += a;
+
+			
+			var a = Math.floor(Math.random()*10);
+			num2.src=arr[a];
+			numCode += a;
+
+			
+			var a = Math.floor(Math.random()*10);
+			num3.src=arr[a];
+			numCode += a;
+
+		}//showImg()
+
+		function checkCode(){
+			var inputCode = document.getElementById("inputCode").value;
+
+			//密碼長度不對
+			if(inputCode != numCode){
+				alert("驗證碼錯誤!");
+			}
+			else{
+				alert("輸入正確!");
+			}
+		}
+	</script>
+	<p>圖片</p>
+	<img id="num" src="./img/numbe0.jpg" border=0 />
+	<img id="num1" src="./img/numbe0.jpg" border=0 />
+	<img id="num2" src="./img/numbe0.jpg" border=0 />
+	<img id="num3" src="./img/numbe0.jpg" border=0 />
+
+	<form>
+		<input type = "button" id="code"  value="顯示驗證碼" onclick= "showImg()"/>
+		<p>請輸入圖片上的數字</p>
+		<input type = "text" id="inputCode" float: initial;/> 
+
+		<input type="submit" name="Submit" value="送出"  onclick= "checkCode()"/>
+	</form>
+</body>
+</html>
