@@ -1,4 +1,5 @@
 # htmlPractice
-self practice with YT video
+self practice
 
-source:https://www.youtube.com/channel/UCrZOiJyMbXpZ8T5snCIJaLA/videos
+
+ YT source:https://www.youtube.com/channel/UCrZOiJyMbXpZ8T5snCIJaLA/videos
