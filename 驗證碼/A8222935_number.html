@@ -56,7 +56,7 @@
 		function checkCode(){
 			var inputCode = document.getElementById("inputCode").value;
 
-			//密碼長度不對
+			//驗證碼錯誤
 			if(inputCode != numCode){
 				alert("驗證碼錯誤!");
 			}
@@ -70,6 +70,8 @@
 	<img id="num1" src="./img/numbe0.jpg" border=0 />
 	<img id="num2" src="./img/numbe0.jpg" border=0 />
 	<img id="num3" src="./img/numbe0.jpg" border=0 />
+	
+	<script>showImg()</script>
 
 	<form>
 		<input type = "button" id="code"  value="顯示驗證碼" onclick= "showImg()"/>
