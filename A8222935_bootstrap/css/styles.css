@@ -1,0 +1,16 @@
+.bgimage{
+    background-image:
+    url("../images/new_BG.jpg");
+    /*background-position: center center;*/
+    background-size: cover;
+    height:270px;
+}
+
+h1{
+    color: #7bcdfd;
+}
+
+table{
+    position: center center;
+    pointer-events: center;
+}
